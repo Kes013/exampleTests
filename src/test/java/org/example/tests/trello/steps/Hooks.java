@@ -15,8 +15,8 @@ public class Hooks {
     private LoginPage loginPage = new LoginPage();
 
     @Before(value = "@UI")
-    public void setUp(Scenario scenario) {
-        WebDriverRunner.setWebDriver(BrowserDriver.chrome());
+    public void setUp() {
+        WebDriverRunner.setWebDriver(BrowserDriver.firefox());
         loginPage.login();
     }
 
