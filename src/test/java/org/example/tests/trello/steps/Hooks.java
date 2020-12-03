@@ -16,7 +16,7 @@ public class Hooks {
 
     @Before(value = "@UI")
     public void setUp() {
-        WebDriverRunner.setWebDriver(BrowserDriver.firefox());
+        WebDriverRunner.setWebDriver(BrowserDriver.chrome());
         loginPage.login();
     }
 
